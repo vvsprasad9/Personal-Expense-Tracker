@@ -1,0 +1,65 @@
+body {
+
+
+.expense-list {
+max-height: 300px;
+overflow-y: auto;
+}
+
+
+.expense-item {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+border-bottom: 1px solid #eee;
+}
+
+
+.expense-item:last-child {
+border-bottom: none;
+}
+
+
+.expense-details {
+flex-grow: 1;
+}
+
+
+.delete-btn {
+background: #dc3545;
+color: white;
+border: none;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+.delete-btn:hover {
+background: #b02a37;
+}
+
+
+.chart-container {
+margin-top: 20px;
+}
+
+
+canvas {
+max-width: 100%;
+}
+
+
+@media (max-width: 600px) {
+.container {
+grid-template-columns: 1fr;
+}
+}
+h1 {
+font-size: 2em;
+}
+.form-section input, .form-section button, .filter-section select {
+font-size: 0.9em;
+}
+}
